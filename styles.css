@@ -198,18 +198,35 @@ a, button {
   height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .features {
     flex-direction: column;
     align-items: flex-start;
   }
   .features-text {
+    flex-basis: 100%;
     max-width: 100%;
     order: 2;
   }
   .features-image {
+    flex-basis: 100%;
     max-width: 100%;
     order: 1;
     margin-bottom: 20px;
   }
+}
+.menu-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  color: #333333;
+}
+
+.menu-section h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.menu-section p {
+  font-size: 1.2em;
 }/*# sourceMappingURL=styles.css.map */
