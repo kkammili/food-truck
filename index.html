@@ -88,10 +88,116 @@
         <p>Explore our wide range of South Indian delicacies.</p>
     </section>
     
+    <section class="menu-section">
+        <h2>Rice Items</h2>
+        <div class="menu-items-wrapper">
+            <button class="scroll-button left" onclick="scrollLeft()">&#8249;</button>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="./images/chicken-biryani.png" class="img-fluid" alt="Chicken Biryani">
+                    <h3>Chicken Biryani</h3>
+                    <p>Deliciously spiced and fragrant biryani with tender chicken pieces.</p>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/veg-fried-rice.png" class="img-fluid" alt="Vegetable Fried Rice">
+                    <h3>Veg Fried Rice</h3>
+                    <p>Flavorful fried rice with fresh vegetables and a hint of soy sauce.</p>
+                    <p class="price">$9.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/mutton-biryani.png" class="img-fluid" alt="Mutton Biryani">
+                    <h3>Mutton Biryani</h3>
+                    <p>Rich and aromatic biryani with succulent pieces of mutton.</p>
+                    <p class="price">$14.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/egg-fried-rice.png" class="img-fluid" alt="Egg Fried Rice">
+                    <h3>Egg Fried Rice</h3>
+                    <p>Simple and tasty fried rice with scrambled eggs and vegetables.</p>
+                    <p class="price">$8.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/prawns-biryani.png" class="img-fluid" alt="Prawn Biryani">
+                    <h3>Prawn Biryani</h3>
+                    <p>Aromatic biryani with succulent prawns and a blend of spices.</p>
+                    <p class="price">$13.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+
+
+                   <div class="menu-item">
+                    <img src="./images/chicken-biryani.png" class="img-fluid" alt="Chicken Biryani">
+                    <h3>Chicken Biryani</h3>
+                    <p>Deliciously spiced and fragrant biryani with tender chicken pieces.</p>
+                    <p class="price">$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/veg-fried-rice.png" class="img-fluid" alt="Vegetable Fried Rice">
+                    <h3>Veg Fried Rice</h3>
+                    <p>Flavorful fried rice with fresh vegetables and a hint of soy sauce.</p>
+                    <p class="price">$9.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/mutton-biryani.png" class="img-fluid" alt="Mutton Biryani">
+                    <h3>Mutton Biryani</h3>
+                    <p>Rich and aromatic biryani with succulent pieces of mutton.</p>
+                    <p class="price">$14.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/egg-fried-rice.png" class="img-fluid" alt="Egg Fried Rice">
+                    <h3>Egg Fried Rice</h3>
+                    <p>Simple and tasty fried rice with scrambled eggs and vegetables.</p>
+                    <p class="price">$8.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="./images/prawns-biryani.png" class="img-fluid" alt="Prawn Biryani">
+                    <h3>Prawn Biryani</h3>
+                    <p>Aromatic biryani with succulent prawns and a blend of spices.</p>
+                    <p class="price">$13.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <button class="scroll-button right" onclick="scrollRight()">&#8250;</button>
+        </div>
+    </section>
     
+    <!-- Add Bootstrap CSS in the <head> section of your HTML file -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Add Bootstrap JS before the closing </body> tag of your HTML file -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+    function scrollLeft() {
+        const container = document.querySelector('.menu-items');
+        container.scrollBy({
+            left: -container.offsetWidth,
+            behavior: 'smooth'
+        });
+    }
+    
+    function scrollRight() {
+        const container = document.querySelector('.menu-items');
+        container.scrollBy({
+            left: container.offsetWidth,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+    
+    
     </body>
 
 </html>
