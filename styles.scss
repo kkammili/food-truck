@@ -192,7 +192,7 @@ a, button {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        background-color: #F2F2F2;
+        background-color: white;
         color: #333333;
     }
     
@@ -250,11 +250,18 @@ a, button {
     }
     
     // menu description
-    .menu-section {
+    .menu-section-description {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #F2F2F2;
+        color: #333333;
+    }
+
+    .menu-section{
         text-align: center;
         padding: 50px 20px;
         background-color: white;
-        color: #333333;
+        color: #333333; 
     }
     
     .menu-section h2 {
